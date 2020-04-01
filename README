@@ -1,0 +1,14 @@
+ 
+dest root /
+dest ram /tmp
+lists_dir ext /var/opkg-lists
+option overlay_root /overlay
+#option check_signature 0
+
+
+src/gz openwrt_core https://raw.githubusercontent.com/SunRain/OpenWrt-binary/master/20200101/bin/targets/x86/core2/packages
+src/gz openwrt_base https://raw.githubusercontent.com/SunRain/OpenWrt-binary/master/20200101/bin//packages/i386_core2/base
+src/gz openwrt_luci https://raw.githubusercontent.com/SunRain/OpenWrt-binary/master/20200101/bin//packages/i386_core2/luci
+src/gz openwrt_packages https://raw.githubusercontent.com/SunRain/OpenWrt-binary/master/20200101/bin//packages/i386_core2/packages
+src/gz openwrt_routing https://raw.githubusercontent.com/SunRain/OpenWrt-binary/master/20200101/bin//packages/i386_core2/routing
+

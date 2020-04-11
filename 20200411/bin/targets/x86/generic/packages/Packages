@@ -1,0 +1,2556 @@
+Package: base-files
+Version: 200-r0-ce326f0
+Depends: libc, netifd, procd, jsonfilter, fstools, fwtool
+License: GPL-2.0
+Section: base
+Architecture: i386_pentium4
+Installed-Size: 39562
+Filename: base-files_200-r0-ce326f0_i386_pentium4.ipk
+Size: 40559
+SHA256sum: 80d70db7628909e26f0cce0a03a52ad65e1d312963c0dc149e927fa1424534c3
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: block-mount
+Version: 2019-08-28-6a61b9ac-3
+Depends: libc, ubox, libubox20170601, libuci, libblobmsg-json, libjson-c
+License: GPL-2.0
+Section: base
+Architecture: i386_pentium4
+Installed-Size: 20985
+Filename: block-mount_2019-08-28-6a61b9ac-3_i386_pentium4.ipk
+Size: 21704
+SHA256sum: 422e1e1f754e099999640f5747972f2135182bbe7af54787a76c47388d2a3ddd
+Description:  Block device mounting and checking
+
+Package: fstools
+Version: 2019-08-28-6a61b9ac-3
+Depends: libc, ubox
+License: GPL-2.0
+Section: base
+Architecture: i386_pentium4
+Installed-Size: 15329
+Filename: fstools_2019-08-28-6a61b9ac-3_i386_pentium4.ipk
+Size: 15989
+SHA256sum: 40d7412353506eebcfef38885b72b7971cdb104b4f9aa7438df093902d815fd1
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 1
+Depends: libc
+Section: utils
+Architecture: i386_pentium4
+Installed-Size: 3272
+Filename: fwtool_1_i386_pentium4.ipk
+Size: 3995
+SHA256sum: 1920f8a3470a59c87208f53c362392bb36325436e061deb30e8d8c461b93c386
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: iptables-mod-conntrack-extra
+Version: 1.8.4-1
+Depends: libc, iptables, kmod-ipt-conntrack-extra, kmod-ipt-raw
+License: GPL-2.0
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 12267
+Filename: iptables-mod-conntrack-extra_1.8.4-1_i386_pentium4.ipk
+Size: 12924
+SHA256sum: 95ddc4b63999d91f935818bf9ec164d86b155f3f9d7a8736d58b0fb9c5bc5e3f
+Description:  Extra iptables extensions for connection tracking.
+ 
+ Matches:
+ - connbytes
+ - connlimit
+ - connmark
+ - recent
+ - helper
+ 
+ Targets:
+ - CONNMARK
+ 
+
+Package: iptables-mod-ipopt
+Version: 1.8.4-1
+Depends: libc, iptables, kmod-ipt-ipopt
+License: GPL-2.0
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 15607
+Filename: iptables-mod-ipopt_1.8.4-1_i386_pentium4.ipk
+Size: 16095
+SHA256sum: 883afd92a29f68a3167e19ecba9265a39931ed11f701eff57f94cace2365a37d
+Description:  iptables extensions for matching/changing IP packet options.
+ 
+ Matches:
+ - dscp
+ - ecn
+ - length
+ - statistic
+ - tcpmss
+ - unclean
+ - hl
+ 
+ Targets:
+ - DSCP
+ - CLASSIFY
+ - ECN
+ - HL
+ 
+
+Package: iptables-mod-ipsec
+Version: 1.8.4-1
+Depends: libc, iptables, kmod-ipt-ipsec
+License: GPL-2.0
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 5637
+Filename: iptables-mod-ipsec_1.8.4-1_i386_pentium4.ipk
+Size: 6323
+SHA256sum: c1b260ee3136c87c8739c2a45b137945ccbf99afe697aabc94e5f64bed1b1861
+Description:  iptables extensions for matching ipsec traffic.
+ 
+ Matches:
+ - ah
+ - esp
+ - policy
+ 
+
+Package: iptables-mod-tproxy
+Version: 1.8.4-1
+Depends: libc, iptables, kmod-ipt-tproxy
+License: GPL-2.0
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 3255
+Filename: iptables-mod-tproxy_1.8.4-1_i386_pentium4.ipk
+Size: 3985
+SHA256sum: f9434c67ff2a70ce7834a195359c520c5b2368d7a349db8aef7deb2d6f6fa613
+Description:  Transparent proxy iptables extensions.
+ 
+ Matches:
+ - socket
+ 
+ Targets:
+ - TPROXY
+ 
+
+Package: iptables
+Version: 1.8.4-1
+Depends: libc, kmod-ipt-core, libip4tc2, libip6tc2, libxtables12
+License: GPL-2.0
+Section: net
+Architecture: i386_pentium4
+Installed-Size: 21921
+Filename: iptables_1.8.4-1_i386_pentium4.ipk
+Size: 22818
+SHA256sum: 7e4085b9fe3e2878484315b53c0e45c64208677ac3dfc3f71786acafd8272a42
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - FLOWOFFLOAD
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: iwinfo
+Version: 2020-03-22-9f5a7c4f-1
+Depends: libc, libiwinfo20200105
+License: GPL-2.0
+Section: utils
+Architecture: i386_pentium4
+Installed-Size: 5676
+Filename: iwinfo_2020-03-22-9f5a7c4f-1_i386_pentium4.ipk
+Size: 6449
+SHA256sum: d5d6cc338a780d7bf936d3a03d39b3ea05e59794a6f3ffd1281744078f5cbe59
+Description:  Command line frontend for the wireless information library.
+
+Package: kmod-3c59x
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mii
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 17537
+Filename: kmod-3c59x_4.19.108-1_i386_pentium4.ipk
+Size: 18501
+SHA256sum: c280e01ee65b82a3319c32154da69bce66c2465534a1e7b3acf5ce1c746b70c9
+Description:  This option enables driver support for a large number of 10mbps and
+ 10/100mbps EISA, PCI and PCMCIA 3Com Ethernet adapters:
+ - "Vortex"    (Fast EtherLink 3c590/3c592/3c595/3c597) EISA and PCI
+ - "Boomerang" (EtherLink XL 3c900 or 3c905)            PCI
+ - "Cyclone"   (3c540/3c900/3c905/3c980/3c575/3c656)    PCI and Cardbus
+ - "Tornado"   (3c905)                                  PCI
+ - "Hurricane" (3c555/3cSOHO)                           PCI
+
+Package: kmod-8139cp
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mii
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 11661
+Filename: kmod-8139cp_4.19.108-1_i386_pentium4.ipk
+Size: 12451
+SHA256sum: b0233e541e5b7e25c187a6b009c1e25f2ec2f5b35f3a5c8d69c1783c77e1b318
+Description:  Kernel module for RealTek RTL-8139C+ PCI Fast Ethernet adapters
+
+Package: kmod-8139too
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mii
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 10805
+Filename: kmod-8139too_4.19.108-1_i386_pentium4.ipk
+Size: 11609
+SHA256sum: abd0fdfe4eda07710861149b147b61bcc1836e0b00e9ce0c9a6c111caf74b259
+Description:  Kernel modules for RealTek RTL-8139 PCI Fast Ethernet adapters
+
+Package: kmod-ac97
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 39454
+Filename: kmod-ac97_4.19.108-1_i386_pentium4.ipk
+Size: 39741
+SHA256sum: b295525ce744795def9d53e85f22c7f9f8dec043f99a9c8e01d1d4169e9e7256
+Description:  The ac97 controller
+
+Package: kmod-asn1-decoder
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2557
+Filename: kmod-asn1-decoder_4.19.108-1_i386_pentium4.ipk
+Size: 3311
+SHA256sum: 7aa44af86bc164288b7b0dcbc21844b219034ebe9587137fef01664273e1c99b
+Description:  Simple ASN1 decoder
+
+Package: kmod-ath10k
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ath, kmod-hwmon-core, kmod-thermal
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 163324
+Filename: kmod-ath10k_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 163941
+SHA256sum: 09145c3230a420c67cc64cadeaf2b6466eb4ddd0b53b8052b8ca1aa32d851ead
+Description:  This module adds support for wireless adapters based on
+ Atheros IEEE 802.11ac family of chipsets. For now only
+ PCI is supported.
+
+Package: kmod-ath5k
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ath
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 74144
+Filename: kmod-ath5k_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 74833
+SHA256sum: 3abf4efd306bb05bdcb3cef32b65609f52f939493e62780c207f8a7933a29fdd
+Description:  This module adds support for wireless adapters based on
+ Atheros 5xxx chipset.
+
+Package: kmod-ath9k-common
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ath
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 118505
+Filename: kmod-ath9k-common_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 117024
+SHA256sum: 47dc55ec5d95ea080dd6282400d7981c02428b28968ef966d46783413ad42c66
+Description:  Atheros 802.11n wireless devices (common code for ath9k and ath9k_htc)
+
+Package: kmod-ath9k-htc
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ath9k-common, kmod-usb-core, ath9k-htc-firmware
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 30899
+Filename: kmod-ath9k-htc_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 31751
+SHA256sum: 7028261c88e1a08913d38b49a6408a842422ae9074a5993bf4c0bb9103b6ea2e
+Description:  This module adds support for wireless adapters based on
+ Atheros USB AR9271 and AR7010 family of chipsets.
+
+Package: kmod-ath9k
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ath9k-common
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 52369
+Filename: kmod-ath9k_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 53228
+SHA256sum: d821655c52a4c0db5705e3a89cfe71e7ec4ff405d23c5a981ece4865741540fc
+Description:  This module adds support for wireless adapters based on
+ Atheros IEEE 802.11n AR5008 and AR9001 family of chipsets.
+
+Package: kmod-ath
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mac80211
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 10863
+Filename: kmod-ath_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 11539
+SHA256sum: 3e3ff80d4aadb8512fa7d00a2b57dbb09fc81a4950274fcfac481eb56adf11b8
+Description:  This module contains some common parts needed by Atheros Wireless drivers.
+
+Package: kmod-bonding
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 53406
+Filename: kmod-bonding_4.19.108-1_i386_pentium4.ipk
+Size: 54230
+SHA256sum: 07773282fb52eb52fe8b364cb2c46c0fa78b764c260ab822157fb0e464e7c6e1
+Description:  Kernel module for NIC bonding.
+
+Package: kmod-button-hotplug
+Version: 4.19.108-3
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-input-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2569
+Filename: kmod-button-hotplug_4.19.108-3_i386_pentium4.ipk
+Size: 3365
+SHA256sum: 7bd70d749b25b406dedc6cd4882e243ec6b90798b4ddf3229b2364a3bad1e56b
+Description:  Kernel module to generate button uevent-s from input subsystem events.
+ If your device uses GPIO buttons, see gpio-button-hotplug.
+
+Package: kmod-cfg80211
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), iw, wireless-regdb
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 149432
+Filename: kmod-cfg80211_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 149972
+SHA256sum: d4a37102efa7583b5425632def500b6e637b023362f27524c989d0b2f7e91801
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
+Package: kmod-crypto-acompress
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 3039
+Filename: kmod-crypto-acompress_4.19.108-1_i386_pentium4.ipk
+Size: 3764
+SHA256sum: ba8f098dc36acb4b9d74fe77a1c9241b87176560f20eb34cd1cba4eefc365996
+Description:  Asynchronous Compression operations
+
+Package: kmod-crypto-aead
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-null
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 233
+Filename: kmod-crypto-aead_4.19.108-1_i386_pentium4.ipk
+Size: 966
+SHA256sum: 861889017147e24bd890faa0b2918aa20afb4d3eb5ba58bde5baf6eb3715c552
+Description:  CryptoAPI AEAD support
+
+Package: kmod-crypto-arc4
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1304
+Filename: kmod-crypto-arc4_4.19.108-1_i386_pentium4.ipk
+Size: 2069
+SHA256sum: 02b28b946676d110dba88985495619cf28f23f95c0c6b15bb9bfe370dfb06616
+Description:  ARC4 cipher CryptoAPI module
+
+Package: kmod-crypto-authenc
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-manager, kmod-crypto-null
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 3036
+Filename: kmod-crypto-authenc_4.19.108-1_i386_pentium4.ipk
+Size: 3776
+SHA256sum: d1f29fba7ec3058e4fbe1458493c3f93293bda7ac7e2a755e7820333236b2bd4
+Description:  Combined mode wrapper for IPsec
+
+Package: kmod-crypto-cbc
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-manager
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2110
+Filename: kmod-crypto-cbc_4.19.108-1_i386_pentium4.ipk
+Size: 2892
+SHA256sum: 7e7f8d42396fe7541538c206951ff778be58536bfb1257a90e0707969225664c
+Description:  Cipher Block Chaining CryptoAPI module
+
+Package: kmod-crypto-ccm
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-ctr, kmod-crypto-aead
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 5690
+Filename: kmod-crypto-ccm_4.19.108-1_i386_pentium4.ipk
+Size: 6452
+SHA256sum: aab18b2247a03b9ef179efa7d419512811e8079d50ecd7cb51cfb84b287587ef
+Description:  Support for Counter with CBC MAC (CCM)
+
+Package: kmod-crypto-cmac
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2115
+Filename: kmod-crypto-cmac_4.19.108-1_i386_pentium4.ipk
+Size: 2910
+SHA256sum: cc61ba72c81a8396b8659c0508a632f04caad7a2ca8b9d2337a17e7f42f64f7d
+Description:  Support for Cipher-based Message Authentication Code (CMAC)
+
+Package: kmod-crypto-crc32
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 244
+Filename: kmod-crypto-crc32_4.19.108-1_i386_pentium4.ipk
+Size: 973
+SHA256sum: cbc9013bbbc36cd01f81901f51ea59304cc35242065c268bfed6395d80ab4b9d
+Description:  CRC32 CRC module
+
+Package: kmod-crypto-crc32c
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 246
+Filename: kmod-crypto-crc32c_4.19.108-1_i386_pentium4.ipk
+Size: 976
+SHA256sum: b1ead13c542f48aca242e928729a13f5f277f1bc0f34a6833449614410cf168e
+Description:  CRC32c CRC module
+
+Package: kmod-crypto-ctr
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-manager, kmod-crypto-seqiv, kmod-crypto-iv
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2822
+Filename: kmod-crypto-ctr_4.19.108-1_i386_pentium4.ipk
+Size: 3579
+SHA256sum: 1c9df4f50ea5b2856510ddfd938b0bf675dace0c92fe6f955424e9d0d974f66a
+Description:  Counter Mode CryptoAPI module
+
+Package: kmod-crypto-cts
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-manager
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2743
+Filename: kmod-crypto-cts_4.19.108-1_i386_pentium4.ipk
+Size: 3490
+SHA256sum: b04cc0c09a532b40230109a7e1d47dbb16ed8e826b2b028621e686e55f69d17c
+Description:  Cipher Text Stealing CryptoAPI module
+
+Package: kmod-crypto-deflate
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-lib-zlib-inflate, kmod-lib-zlib-deflate, kmod-crypto-acompress
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1904
+Filename: kmod-crypto-deflate_4.19.108-1_i386_pentium4.ipk
+Size: 2661
+SHA256sum: bb8d8ce0f4e01417d63e95c82b675f95e8214a06d5763841dd1472472cbab43a
+Description:  Deflate compression CryptoAPI module
+
+Package: kmod-crypto-des
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 7242
+Filename: kmod-crypto-des_4.19.108-1_i386_pentium4.ipk
+Size: 7750
+SHA256sum: 7a0dc2e60ff733ef1bc11ffd9a03161028aaa67fa07e159a4276aed141e48ebd
+Description:  DES/3DES cipher CryptoAPI module
+
+Package: kmod-crypto-ecb
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-manager
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1522
+Filename: kmod-crypto-ecb_4.19.108-1_i386_pentium4.ipk
+Size: 2298
+SHA256sum: c67afe45045b63f9b94dad62cc3d3d66891606dbff7903e2d586914bd8e083b4
+Description:  Electronic CodeBook CryptoAPI module
+
+Package: kmod-crypto-echainiv
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-aead
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1670
+Filename: kmod-crypto-echainiv_4.19.108-1_i386_pentium4.ipk
+Size: 2445
+SHA256sum: cbfd01d3c5bb75267c45f4219a6e74f98bed87a4f636f8f2ce125bc83043cfe3
+Description:  Encrypted Chain IV Generator
+
+Package: kmod-crypto-hash
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 239
+Filename: kmod-crypto-hash_4.19.108-1_i386_pentium4.ipk
+Size: 961
+SHA256sum: 2aaddf7452aec61d4845283869989548a528844b1b058fc8df7e9db78d253875
+Description:  CryptoAPI hash support
+
+Package: kmod-crypto-hmac
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash, kmod-crypto-manager
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2221
+Filename: kmod-crypto-hmac_4.19.108-1_i386_pentium4.ipk
+Size: 2964
+SHA256sum: 04957737c403cb84bb67f3252ff5cc953df6998e3f6d8c6470174bc3283247d1
+Description:  HMAC digest CryptoAPI module
+
+Package: kmod-crypto-iv
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-manager, kmod-crypto-rng, kmod-crypto-wq
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 201
+Filename: kmod-crypto-iv_4.19.108-1_i386_pentium4.ipk
+Size: 945
+SHA256sum: 805c09e3878f65092d3f0f783abd560a835c044ef52fe029630aedb3fb025e86
+Description:  CryptoAPI initialization vectors
+
+Package: kmod-crypto-manager
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-aead, kmod-crypto-hash, kmod-crypto-pcompress
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 241
+Filename: kmod-crypto-manager_4.19.108-1_i386_pentium4.ipk
+Size: 985
+SHA256sum: 2b44a404390446f42b846618d352ff1291789e34b5eb4de2a736b8c438b009b8
+Description:  CryptoAPI algorithm manager
+
+Package: kmod-crypto-md4
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2446
+Filename: kmod-crypto-md4_4.19.108-1_i386_pentium4.ipk
+Size: 3215
+SHA256sum: 5256efe13004eb8787eb6942bb308d6ca4e5f24e43e788c2625dade24203adaa
+Description:  MD4 digest CryptoAPI module
+
+Package: kmod-crypto-md5
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2999
+Filename: kmod-crypto-md5_4.19.108-1_i386_pentium4.ipk
+Size: 3740
+SHA256sum: 4e57c4b3c2e2c23d2d5c52ae7780a735b250ad8d1041b4008a4fd315ef264cc0
+Description:  MD5 digest CryptoAPI module
+
+Package: kmod-crypto-null
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 194
+Filename: kmod-crypto-null_4.19.108-1_i386_pentium4.ipk
+Size: 927
+SHA256sum: d3838d7c4f214e282b34fc56c8ee574c6f5f20126ef5d6abb4e90d56af6dcaf0
+Description:  Null CryptoAPI module
+
+Package: kmod-crypto-pcompress
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 105
+Filename: kmod-crypto-pcompress_4.19.108-1_i386_pentium4.ipk
+Size: 836
+SHA256sum: 9b2ad3264882bfdc39e5bd63dbf5ac28be66a3cf02a14d555b45e6ade59fc827
+Description:  CryptoAPI Partial (de)compression operations
+
+Package: kmod-crypto-rng
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash, kmod-crypto-hmac, kmod-crypto-sha256
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 7776
+Filename: kmod-crypto-rng_4.19.108-1_i386_pentium4.ipk
+Size: 8557
+SHA256sum: 57e42a69e33de49940c72975d88153e985e0872e15fd01211ed1fd172accd43f
+Description:  CryptoAPI random number generation
+
+Package: kmod-crypto-seqiv
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-aead, kmod-crypto-rng
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1855
+Filename: kmod-crypto-seqiv_4.19.108-1_i386_pentium4.ipk
+Size: 2640
+SHA256sum: b8e09bc2b55a0c3094f9692a9145ce48d2201ccf96f7bae69a4eb08bb452bd0c
+Description:  CryptoAPI Sequence Number IV Generator
+
+Package: kmod-crypto-sha1
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1865
+Filename: kmod-crypto-sha1_4.19.108-1_i386_pentium4.ipk
+Size: 2642
+SHA256sum: 884fd0f616db6b54c4da261751deb8b9a69da17fbe3b75386e8693aba0f576ad
+Description:  SHA1 digest CryptoAPI module
+
+Package: kmod-crypto-sha256
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 4145
+Filename: kmod-crypto-sha256_4.19.108-1_i386_pentium4.ipk
+Size: 4910
+SHA256sum: aa1b784378532d68da48858ff0312222fe1482bc9be9878962ed97899ad8575c
+Description:  SHA224 SHA256 digest CryptoAPI module
+
+Package: kmod-crypto-sha512
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 5896
+Filename: kmod-crypto-sha512_4.19.108-1_i386_pentium4.ipk
+Size: 6645
+SHA256sum: bc7316560bc3ad7d61104ac6827c24d38a51a944b31c21b867e354a547ef8cdc
+Description:  SHA512 digest CryptoAPI module
+
+Package: kmod-crypto-wq
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 194
+Filename: kmod-crypto-wq_4.19.108-1_i386_pentium4.ipk
+Size: 925
+SHA256sum: 7e5f92868118371986890a999bf1c1846a58783f89649ebdeee9ef6537a45615
+Description:  CryptoAPI work queue handling
+
+Package: kmod-cryptodev
+Version: 4.19.108+1.10-x86-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-authenc, kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 17211
+Filename: kmod-cryptodev_4.19.108+1.10-x86-1_i386_pentium4.ipk
+Size: 18112
+SHA256sum: 8f0ea34d6a70ea0ae496ae4ee8864387fbf8337a98e7dfd2ad7ae133f4c6d328
+Description:  This is a driver for that allows to use the Linux kernel supported
+ hardware ciphers by user-space applications.
+
+Package: kmod-dnsresolver
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 3698
+Filename: kmod-dnsresolver_4.19.108-1_i386_pentium4.ipk
+Size: 4417
+SHA256sum: 3c603ae32a0b3671f68f52a637abdffbc77e3965d23bb7f19f4c5fe6538b762d
+Description:  In-kernel DNS Resolver
+
+Package: kmod-e1000
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 49102
+Filename: kmod-e1000_4.19.108-1_i386_pentium4.ipk
+Size: 49948
+SHA256sum: 769a1d692b3f27d9adde733b94869c21c4e54ab2319a775f2b54c97fd8cc1941
+Description:  Kernel modules for Intel(R) PRO/1000 PCI Ethernet adapters.
+
+Package: kmod-e1000e
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ptp
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 76687
+Filename: kmod-e1000e_4.19.108-1_i386_pentium4.ipk
+Size: 77501
+SHA256sum: 0b81d355078762927ef24a6ff713e5d1f921d2d215a0dad0ee511da8e0db3574
+Description:  Kernel modules for Intel(R) PRO/1000 PCIe Ethernet adapters.
+
+Package: kmod-e100
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mii, e100-firmware
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 15154
+Filename: kmod-e100_4.19.108-1_i386_pentium4.ipk
+Size: 15927
+SHA256sum: 8ad01ce416cc583a107c968cdc58466fc0bf76ef55662c75d46069b673f60520
+Description:  Kernel modules for Intel(R) PRO/100+ Ethernet adapters
+
+Package: kmod-fs-antfs
+Version: 4.19.108+2020-02-10-b41ba529-2
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nls-base
+License: GPL-2.0-only
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 123714
+Filename: kmod-fs-antfs_4.19.108+2020-02-10-b41ba529-2_i386_pentium4.ipk
+Size: 124503
+SHA256sum: e2e1a9490df6c9428ae307da7cde503ff08b82167a952cfa70dec0cfaa640645
+Description:  Kernel module for NTFS Filesytem
+
+Package: kmod-fs-exfat
+Version: 4.19.108+2018-04-17-01c30ad5-2
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nls-base
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 46042
+Filename: kmod-fs-exfat_4.19.108+2018-04-17-01c30ad5-2_i386_pentium4.ipk
+Size: 46854
+SHA256sum: 71e0045e90afbf23587a630406a587a684a95fc35327451e2ec396d872c90a34
+Description:  Kernel module for ExFAT Filesytems
+
+Package: kmod-fs-exportfs
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 234
+Filename: kmod-fs-exportfs_4.19.108-1_i386_pentium4.ipk
+Size: 979
+SHA256sum: 6b9af2d9aee3b3a3e636777f01641c7a87ee102835af76731cb93d432860fcc3
+Description:  Kernel module for exportfs. Needed for some other modules.
+
+Package: kmod-fs-ext4
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-lib-crc16, kmod-crypto-hash, kmod-crypto-crc32c
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 243
+Filename: kmod-fs-ext4_4.19.108-1_i386_pentium4.ipk
+Size: 1004
+SHA256sum: 9ec6f981fa42e9f07170648e992f792dbe2117ec1641cc2472a7e2ca95ebdbb8
+Description:  Kernel module for EXT4 filesystem support
+
+Package: kmod-fs-f2fs
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-hash, kmod-crypto-crc32
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 228
+Filename: kmod-fs-f2fs_4.19.108-1_i386_pentium4.ipk
+Size: 977
+SHA256sum: 8dd26b8c7b8e05775f847abd5dce2387217de99f9bce27dd35dd62032d377475
+Description:  Kernel module for F2FS filesystem support
+
+Package: kmod-fs-nfs-common-rpcsec
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-fs-nfs-common, kmod-crypto-des, kmod-crypto-cbc, kmod-crypto-cts, kmod-crypto-md5, kmod-crypto-sha1, kmod-crypto-hmac, kmod-crypto-ecb, kmod-crypto-arc4
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 36172
+Filename: kmod-fs-nfs-common-rpcsec_4.19.108-1_i386_pentium4.ipk
+Size: 36848
+SHA256sum: 0d67ce12700a17a980976ffaa3d2f259a3ceb56f2a98e16f2d0942469849fcd7
+Description:  Kernel modules for NFS Secure RPC
+
+Package: kmod-fs-nfs-common
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 109274
+Filename: kmod-fs-nfs-common_4.19.108-1_i386_pentium4.ipk
+Size: 109845
+SHA256sum: ca7ec20737b6ac15d65b56f33c91919f1e8f1a28005d0dab2f3d0ab8d857db97
+Description:  Common NFS filesystem modules
+
+Package: kmod-fs-nfs-v3
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-fs-nfs
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 9087
+Filename: kmod-fs-nfs-v3_4.19.108-1_i386_pentium4.ipk
+Size: 9856
+SHA256sum: 5b4de36c55a648cba1efcae0d7535c02e562dc42c3d260ff59425928c2b4ed1b
+Description:  Kernel module for NFS v3 client support
+
+Package: kmod-fs-nfs-v4
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-fs-nfs
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 68007
+Filename: kmod-fs-nfs-v4_4.19.108-1_i386_pentium4.ipk
+Size: 68763
+SHA256sum: ecb0ad40376943c6fef92a011ec35f54969e0ac4c8f227c7293253c5d398a8f5
+Description:  Kernel module for NFS v4 support
+
+Package: kmod-fs-nfs
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-fs-nfs-common, kmod-dnsresolver
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 65722
+Filename: kmod-fs-nfs_4.19.108-1_i386_pentium4.ipk
+Size: 66324
+SHA256sum: ed5645009fbbb3ef046dff6ba45e9f6ba83044ce0300c06240988d9642f4c469
+Description:  Kernel module for NFS client support
+
+Package: kmod-fs-nfsd
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-fs-nfs-common, kmod-fs-exportfs, kmod-fs-nfs-common-rpcsec
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 103734
+Filename: kmod-fs-nfsd_4.19.108-1_i386_pentium4.ipk
+Size: 104228
+SHA256sum: be81b206f51f46b00528383d4aea14984f05e46aa56b27b7f3965a0a7417e19c
+Description:  Kernel module for NFS kernel server support
+
+Package: kmod-fs-squashfs
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 234
+Filename: kmod-fs-squashfs_4.19.108-1_i386_pentium4.ipk
+Size: 968
+SHA256sum: e6184165adb266dad04dc02f89a6aad1438e4c75ab2d92ae10fc424b78266df1
+Description:  Kernel module for SquashFS 4.0 support
+
+Package: kmod-fs-vfat
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nls-base, kmod-nls-cp437, kmod-nls-iso8859-1, kmod-nls-utf8
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 38699
+Filename: kmod-fs-vfat_4.19.108-1_i386_pentium4.ipk
+Size: 39553
+SHA256sum: 3dc22c3bb8df8b391784903101c417ae763e32247aa6234bce9c19e1945f1b4b
+Description:  Kernel module for VFAT filesystem support
+
+Package: kmod-fuse
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 44168
+Filename: kmod-fuse_4.19.108-1_i386_pentium4.ipk
+Size: 44891
+SHA256sum: f6525371d97735a494199ea2eccf5fe44f2771d748817f0582c3c06db4d25b89
+Description:  Kernel module for userspace filesystem support
+
+Package: kmod-gre
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-iptunnel
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 11818
+Filename: kmod-gre_4.19.108-1_i386_pentium4.ipk
+Size: 12563
+SHA256sum: 92816903b99ca40910ca23543ef4c0b685781aa9ce488b8dfc1a200748b0111c
+Description:  Generic Routing Encapsulation support
+
+Package: kmod-hid-generic
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-hid
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 189
+Filename: kmod-hid-generic_4.19.108-1_i386_pentium4.ipk
+Size: 919
+SHA256sum: e6e0457899be9cc3b49897f17d582688026f2c63b0f0c92b3b5d78e1fd2b0d37
+Description:  Generic HID device support
+
+Package: kmod-hid
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-input-core, kmod-input-evdev
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 183
+Filename: kmod-hid_4.19.108-1_i386_pentium4.ipk
+Size: 920
+SHA256sum: 9e4c205e5d63221ccf1df8b28ae4ae3e86ff31eb247127079a2915cdc72078d7
+Description:  Kernel modules for HID devices
+
+Package: kmod-hwmon-core
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 105
+Filename: kmod-hwmon-core_4.19.108-1_i386_pentium4.ipk
+Size: 835
+SHA256sum: 2592763ab208ecd60fb94650cf22a919c19334c7acf76774ee06efeb6e2506ec
+Description:  Kernel modules for hardware monitoring
+
+Package: kmod-i2c-algo-bit
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-i2c-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 191
+Filename: kmod-i2c-algo-bit_4.19.108-1_i386_pentium4.ipk
+Size: 941
+SHA256sum: e5a983c064a624cc1229859c69f0686903d642907b95c36404de0ba49fa7889d
+Description:  Kernel modules for I2C bit-banging interfaces
+
+Package: kmod-i2c-core
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 3858
+Filename: kmod-i2c-core_4.19.108-1_i386_pentium4.ipk
+Size: 4577
+SHA256sum: 4b1c3fe20e6e2b7bd0355dbe445dcebd82fad47cfc8df3c98161b141032ad8fb
+Description:  Kernel modules for I2C support
+
+Package: kmod-i40e
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mdio, kmod-ptp, kmod-hwmon-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 141776
+Filename: kmod-i40e_4.19.108-1_i386_pentium4.ipk
+Size: 142523
+SHA256sum: 1990ea66f5551fd45ca265cc18d606766ff2db5c26d23c766267ac61d7bd6331
+Description:  Kernel modules for Intel(R) Ethernet Controller XL710 Family 40 Gigabit Ethernet adapters.
+
+Package: kmod-i40evf
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-i40e
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 43740
+Filename: kmod-i40evf_4.19.108-1_i386_pentium4.ipk
+Size: 44520
+SHA256sum: 8ff67c7683b7e0afe4de3c55e55b940ea188f0d548148d85a9d98898d88e6a91
+Description:  Kernel modules for Intel(R) Ethernet Controller XL710 Family Virtual Function Ethernet adapters.
+
+Package: kmod-ifb
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2983
+Filename: kmod-ifb_4.19.108-1_i386_pentium4.ipk
+Size: 3701
+SHA256sum: 3ef37b6fcd0927e91f55aaf66c523d1c16a75940fe4083e08bb7bcee1c7467ec
+Description:  The Intermediate Functional Block
+
+Package: kmod-igb
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-i2c-core, kmod-i2c-algo-bit, kmod-ptp, kmod-hwmon-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 75702
+Filename: kmod-igb_4.19.108-1_i386_pentium4.ipk
+Size: 76550
+SHA256sum: 7ff18160374a61450849ff863431ad299ab85aaf6a763deae8207200a6cd5903
+Description:  Kernel modules for Intel(R) 82575/82576 PCI-Express Gigabit Ethernet adapters.
+
+Package: kmod-igbvf
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-i2c-core, kmod-i2c-algo-bit, kmod-ptp
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 17074
+Filename: kmod-igbvf_4.19.108-1_i386_pentium4.ipk
+Size: 17908
+SHA256sum: 7c19914a73496a24f35b13995fce45366f2c3b9203cb53b1a5e695a8ad09e5a3
+Description:  Kernel modules for Intel(R) 82576 Virtual Function Ethernet adapters.
+
+Package: kmod-input-core
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 105
+Filename: kmod-input-core_4.19.108-1_i386_pentium4.ipk
+Size: 839
+SHA256sum: c83a77f82c66670f8e80d72300849cf93436c5ea93e33a47e2421b5f3f7de741
+Description:  Kernel modules for support of input device
+
+Package: kmod-input-evdev
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-input-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 6700
+Filename: kmod-input-evdev_4.19.108-1_i386_pentium4.ipk
+Size: 7504
+SHA256sum: 1496ef023ed9196c96742b439b82bc50ed7aff63e44160032b57e35ac771af50
+Description:  Kernel modules for support of input device events
+
+Package: kmod-ip6tables
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nf-reject6, kmod-nf-ipt6, kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 5690
+Filename: kmod-ip6tables_4.19.108-1_i386_pentium4.ipk
+Size: 6464
+SHA256sum: 60e2b343bb8628174e73ed410565188f47a9a54211a088f55ca4f489058e7108
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipsec4
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipsec, kmod-iptunnel4
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 14411
+Filename: kmod-ipsec4_4.19.108-1_i386_pentium4.ipk
+Size: 15223
+SHA256sum: 8cd4c12d48f79b3454125868ef1e66642192b2f14c2b6aaf9c7eaf34527ee6ea
+Description:  Kernel modules for IPsec support in IPv4.
+ Includes:
+ - ah4
+ - esp4
+ - ipcomp4
+ - xfrm4_mode_beet
+ - xfrm4_mode_transport
+ - xfrm4_mode_tunnel
+ - xfrm4_tunnel
+
+Package: kmod-ipsec6
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipsec, kmod-iptunnel6
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 15273
+Filename: kmod-ipsec6_4.19.108-1_i386_pentium4.ipk
+Size: 16038
+SHA256sum: 90ce409677cfd5b03aedba5d4107b03f55b023d4634cdb778bd5a88de30fc8d7
+Description:  Kernel modules for IPsec support in IPv6.
+ Includes:
+ - ah6
+ - esp6
+ - ipcomp6
+ - xfrm6_mode_beet
+ - xfrm6_mode_transport
+ - xfrm6_mode_tunnel
+ - xfrm6_tunnel
+
+Package: kmod-ipsec
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-crypto-authenc, kmod-crypto-cbc, kmod-crypto-deflate, kmod-crypto-des, kmod-crypto-echainiv, kmod-crypto-hmac, kmod-crypto-iv, kmod-crypto-md5, kmod-crypto-sha1
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 33666
+Filename: kmod-ipsec_4.19.108-1_i386_pentium4.ipk
+Size: 34564
+SHA256sum: abf9b7d7c3612a20f26c7c523406cd9d4e15731b7a6aec8af5471897a41f7b3d
+Description:  Kernel modules for IPsec support in both IPv4 and IPv6.
+ Includes:
+ - af_key
+ - xfrm_algo
+ - xfrm_ipcomp
+ - xfrm_user
+
+Package: kmod-ipt-conntrack-extra
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipt-core, kmod-ipt-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 12737
+Filename: kmod-ipt-conntrack-extra_4.19.108-1_i386_pentium4.ipk
+Size: 13544
+SHA256sum: 1a04184965cf7eaf04f587e0b921ebff742bab8b05f591a3bc4d2239dc2c4937
+Description:  Netfilter (IPv4) extra kernel modules for connection tracking
+ Includes:
+ - connbytes
+ - connmark/CONNMARK
+ - conntrack
+ - helper
+ - recent
+
+Package: kmod-ipt-conntrack
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipt-core, kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 4420
+Filename: kmod-ipt-conntrack_4.19.108-1_i386_pentium4.ipk
+Size: 5236
+SHA256sum: 8fbf17c8e4a7288f763462ae35b3276f00d17196c28110670c86710f5f1b546e
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nf-reject, kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 13769
+Filename: kmod-ipt-core_4.19.108-1_i386_pentium4.ipk
+Size: 14566
+SHA256sum: d5f91d72778b8f39f305281a18e21c854b6a50fe39525e45682d1616a3dde838
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-fullconenat
+Version: 4.19.108+2019-10-21-0cf3b48f-2
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nf-ipt, kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 4017
+Filename: kmod-ipt-fullconenat_4.19.108+2019-10-21-0cf3b48f-2_i386_pentium4.ipk
+Size: 4814
+SHA256sum: efd7ce976ca6db491e1ed4c3bb6f2178a840cae1390c7bfe4130996f33c8c957
+Description:  FULLCONENAT netfilter module
+
+Package: kmod-ipt-ipopt
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 5978
+Filename: kmod-ipt-ipopt_4.19.108-1_i386_pentium4.ipk
+Size: 6831
+SHA256sum: a3740db65d2e1d48c3072ba1e3cf06d1e35502f34f42a2cbfa53015f6eb6cf25
+Description:  Netfilter (IPv4) modules for matching/changing IP packet options
+ Includes:
+ - CLASSIFY
+ - dscp/DSCP
+ - ecn/ECN
+ - hl/HL
+ - length
+ - mark/MARK
+ - statistic
+ - tcpmss
+ - time
+ - ttl/TTL
+ - unclean
+
+Package: kmod-ipt-ipsec
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2615
+Filename: kmod-ipt-ipsec_4.19.108-1_i386_pentium4.ipk
+Size: 3405
+SHA256sum: f88abcd8961f4380de8375c9ed4163603406612ba89f08ae0796389eee8091ff
+Description:  Netfilter (IPv4) modules for matching IPSec packets
+ Includes:
+ - ah
+ - esp
+ - policy
+
+Package: kmod-ipt-ipset
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipt-core, kmod-nfnetlink
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 100758
+Filename: kmod-ipt-ipset_4.19.108-1_i386_pentium4.ipk
+Size: 101316
+SHA256sum: b9cb35c9905918ab355f59c2f414d7f71529e19fc9de7ab057bf026f40745599
+Description:  IPset netfilter modules
+
+Package: kmod-ipt-nat
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipt-core, kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 3635
+Filename: kmod-ipt-nat_4.19.108-1_i386_pentium4.ipk
+Size: 4407
+SHA256sum: 878c2c919b0fcb778a1bb93257ede48a066beab624b48030e279947ba97cb548
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-offload
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipt-core, kmod-nf-flow
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2853
+Filename: kmod-ipt-offload_4.19.108-1_i386_pentium4.ipk
+Size: 3599
+SHA256sum: 436e3e748867021f6988c15f5ebf2a70fbbcce4d5cbb202679e1f73475092061
+Description:  Netfilter routing/NAT offload support
+
+Package: kmod-ipt-raw
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1447
+Filename: kmod-ipt-raw_4.19.108-1_i386_pentium4.ipk
+Size: 2215
+SHA256sum: fab45c9e571d8840f79ff259daecc960f3e2ae790d6ca303119dfcbd0ecb9fc9
+Description:  Netfilter IPv4 raw table support
+
+Package: kmod-ipt-tproxy
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipt-conntrack, kmod-nf-conntrack6, kmod-ip6tables, kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 7402
+Filename: kmod-ipt-tproxy_4.19.108-1_i386_pentium4.ipk
+Size: 8187
+SHA256sum: 551a868e7d4c453708119a8be0ce00447d101bc38e3363539352e2e5533978cb
+Description:  Kernel modules for Transparent Proxying
+
+Package: kmod-iptunnel4
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1694
+Filename: kmod-iptunnel4_4.19.108-1_i386_pentium4.ipk
+Size: 2451
+SHA256sum: 587f299a991eefe985787b2d9f42576bd107865e9412170b703e49c81ff5e368
+Description:  Kernel modules for IPv4 tunneling
+
+Package: kmod-iptunnel6
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1701
+Filename: kmod-iptunnel6_4.19.108-1_i386_pentium4.ipk
+Size: 2456
+SHA256sum: 25d95f62dfa6d23f731c3157af4625425c86b92ccc448dd3c9562b0fa8a8e81e
+Description:  Kernel modules for IPv6 tunneling
+
+Package: kmod-iptunnel
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 8667
+Filename: kmod-iptunnel_4.19.108-1_i386_pentium4.ipk
+Size: 9417
+SHA256sum: 06e5e505e9d3e7d40c40368e080aab19871927d1bc76b0279e2d2e9e6d1e0500
+Description:  Kernel module for generic IP tunnel support
+
+Package: kmod-ixgbe
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mdio, kmod-ptp, kmod-hwmon-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 107031
+Filename: kmod-ixgbe_4.19.108-1_i386_pentium4.ipk
+Size: 107751
+SHA256sum: 475d1acd4d012849ac80932c684789814447ecdf6e6d8f914ab537ca2959deaa
+Description:  Kernel modules for Intel(R) 82598/82599 PCI-Express 10 Gigabit Ethernet adapters.
+
+Package: kmod-lib-crc-ccitt
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1993
+Filename: kmod-lib-crc-ccitt_4.19.108-1_i386_pentium4.ipk
+Size: 2764
+SHA256sum: 9c4270bdb2630c05b50d023f2ee8552a30728b4c75d078da0faf9a3cef9c213b
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-lib-crc16
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 230
+Filename: kmod-lib-crc16_4.19.108-1_i386_pentium4.ipk
+Size: 962
+SHA256sum: 02818b05d62cf4e7223d0f80c1d54fda24533ac0085c7f39a84569e2219453d6
+Description:  Kernel module for CRC16 support
+
+Package: kmod-lib-textsearch
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 3553
+Filename: kmod-lib-textsearch_4.19.108-1_i386_pentium4.ipk
+Size: 4298
+SHA256sum: c55d6b5afaf5e55a45003917d978bde0c37553f5073d4b8388bbc954512316c1
+Description:  Textsearch support
+
+Package: kmod-lib-zlib-deflate
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 195
+Filename: kmod-lib-zlib-deflate_4.19.108-1_i386_pentium4.ipk
+Size: 915
+SHA256sum: 6cb4daa84e656af609283c203b2f6d14d9985615ab8cc272721065996d875329
+Description:  Zlib support
+
+Package: kmod-lib-zlib-inflate
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 197
+Filename: kmod-lib-zlib-inflate_4.19.108-1_i386_pentium4.ipk
+Size: 917
+SHA256sum: 5e0c4137e473414a4c85cdf1d277822fe7aaa375ca71e3db7cb4c9bb3e2fa069
+Description:  Zlib support
+
+Package: kmod-libphy
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 19175
+Filename: kmod-libphy_4.19.108-1_i386_pentium4.ipk
+Size: 19921
+SHA256sum: 14cd598b140d818f499b87a26ca8328e50a543e6655e2d31bdc6f1141681ea00
+Description:  PHY library
+
+Package: kmod-mac80211
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-cfg80211, hostapd-common
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 251973
+Filename: kmod-mac80211_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 252141
+SHA256sum: 4cc711ac17b61d75849b56c4a577c22a2d7ec35cf1e2e48b84039dbbd158ac8f
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
+Package: kmod-macvlan
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 8389
+Filename: kmod-macvlan_4.19.108-1_i386_pentium4.ipk
+Size: 9200
+SHA256sum: ebb7b4ed617938c4c1e19187e8a631b9019d4048567e42080e281751bf21554f
+Description:  A kernel module which allows one to create virtual interfaces that
+ map packets to or from specific MAC addresses to a particular interface
+
+Package: kmod-mdio
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2863
+Filename: kmod-mdio_4.19.108-1_i386_pentium4.ipk
+Size: 3603
+SHA256sum: 0e4d43685fb8eaa0e34dad9774acfa3852c5e3e9eefe2e8d33a3e69e18c6903f
+Description:  Kernel modules for MDIO (clause 45) PHY support
+
+Package: kmod-mii
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 3803
+Filename: kmod-mii_4.19.108-1_i386_pentium4.ipk
+Size: 4516
+SHA256sum: bc43664edd2cfd58c71a5459d6dc2d317b03974d61ab218fed2c10f156871d24
+Description:  MII library
+
+Package: kmod-mppe
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ppp, kmod-crypto-arc4, kmod-crypto-sha1, kmod-crypto-ecb
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 4303
+Filename: kmod-mppe_4.19.108-1_i386_pentium4.ipk
+Size: 5070
+SHA256sum: 39b605bfddb9ad6b408f7039f3f2ce5bc07d53f6184c908e0d20d4129d4af6a9
+Description:  Kernel modules for Microsoft PPP compression/encryption
+
+Package: kmod-natsemi
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 14287
+Filename: kmod-natsemi_4.19.108-1_i386_pentium4.ipk
+Size: 15034
+SHA256sum: 496f426d741b171ee2fac57b9461a4814c7744b662a1ed38828baa1852926ecf
+Description:  Kernel modules for National Semiconductor DP8381x series PCI Ethernet
+ adapters.
+
+Package: kmod-ne2k-pci
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 8500
+Filename: kmod-ne2k-pci_4.19.108-1_i386_pentium4.ipk
+Size: 9271
+SHA256sum: 12ecb89e57b81126e7becb8987d8f00f8cad42d58289a68a62682f30af47c583
+Description:  Kernel modules for NE2000 PCI Ethernet Adapter kernel
+
+Package: kmod-nf-conntrack-netlink
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nfnetlink, kmod-ipt-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 13603
+Filename: kmod-nf-conntrack-netlink_4.19.108-1_i386_pentium4.ipk
+Size: 14376
+SHA256sum: 6fd52336731aef7be2f791a467ecc88ef25a90f9dad06fe333e54c403af3a834
+Description:  Kernel modules support for a netlink-based connection tracking
+ userspace interface
+
+Package: kmod-nf-conntrack6
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 105
+Filename: kmod-nf-conntrack6_4.19.108-1_i386_pentium4.ipk
+Size: 836
+SHA256sum: 4e252a79eb35935c5578fbb3ab3476afa9fbfb02c9c60982eee6e7e3bbcdc16b
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 43720
+Filename: kmod-nf-conntrack_4.19.108-1_i386_pentium4.ipk
+Size: 44465
+SHA256sum: 3d605d16427a21c68f4759a79f5def202bfa0bf3103729304daefb76b0920556
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-flow
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 9599
+Filename: kmod-nf-flow_4.19.108-1_i386_pentium4.ipk
+Size: 10384
+SHA256sum: ad0d5180e3f8af4eb981694271b7bddaa3a1229311039df9781589b72628bfeb
+Description:  Netfilter flowtable support
+
+Package: kmod-nf-ipt6
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 7287
+Filename: kmod-nf-ipt6_4.19.108-1_i386_pentium4.ipk
+Size: 8063
+SHA256sum: 51978977a78097addcdeb847dcd9bd214e3c8b863021c77e5a13ebed95e6b9e1
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 15189
+Filename: kmod-nf-ipt_4.19.108-1_i386_pentium4.ipk
+Size: 15901
+SHA256sum: d815e9a33a9fb49032858b9a559cca6b0596dae3122cf5eae58d6b14ae3f2c87
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 12340
+Filename: kmod-nf-nat_4.19.108-1_i386_pentium4.ipk
+Size: 13085
+SHA256sum: 298b1dadc03aa9b7477c9fc5cd3b2ca329b79e7c67da9158623ff41efcb8755f
+Description:  Netfilter NAT
+
+Package: kmod-nf-nathelper-extra
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nf-nat, kmod-lib-textsearch, kmod-ipt-raw, kmod-asn1-decoder
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 45960
+Filename: kmod-nf-nathelper-extra_4.19.108-1_i386_pentium4.ipk
+Size: 46869
+SHA256sum: 90fbfb51cf49d05de3d303824cf876ad4507f7a2dfbde0c75438e9ef8342ca63
+Description:  Extra Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - amanda
+ - h323
+ - irc
+ - mms
+ - pptp
+ - proto_gre
+ - sip
+ - snmp_basic
+ - tftp
+ - broadcast
+
+Package: kmod-nf-nathelper
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 4826
+Filename: kmod-nf-nathelper_4.19.108-1_i386_pentium4.ipk
+Size: 5610
+SHA256sum: 4ef09f7a41f4a0b80cbba8cb9d7792ef5eef1a204d58e027e896ea46fe0ba5e6
+Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
+ Includes:
+ - ftp
+
+Package: kmod-nf-reject6
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2149
+Filename: kmod-nf-reject6_4.19.108-1_i386_pentium4.ipk
+Size: 2911
+SHA256sum: 2f31890f298d3ffdf5097fb41e5d6f728c089672efebb8e38d45fbb01aadfbf3
+Description:  Netfilter IPv6 reject support
+
+Package: kmod-nf-reject
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1835
+Filename: kmod-nf-reject_4.19.108-1_i386_pentium4.ipk
+Size: 2595
+SHA256sum: 3e17ec02c93484163836245cd20d925fa3ab65bc7104ccf801d2a8deff7f6714
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-nfnetlink
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 4053
+Filename: kmod-nfnetlink_4.19.108-1_i386_pentium4.ipk
+Size: 4799
+SHA256sum: 94bca292ae422f8fdc1bfb40429f3eb62666424b8667f8d80cb2d444dbc60342
+Description:  Kernel modules support for a netlink-based userspace interface
+
+Package: kmod-nft-bridge
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nft-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 3259
+Filename: kmod-nft-bridge_4.19.108-1_i386_pentium4.ipk
+Size: 4003
+SHA256sum: d5ef6c46e49a30ff80ab1293a47e91f57dae607a88ced565f241b5c7d7f9d6d2
+Description:  Netfilter nf_tables bridge table support
+
+Package: kmod-nft-core
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nfnetlink, kmod-nf-reject, kmod-nf-reject6, kmod-nf-conntrack6
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 60104
+Filename: kmod-nft-core_4.19.108-1_i386_pentium4.ipk
+Size: 60989
+SHA256sum: d912b5df0d47695c096607496f52a3038c66d8a8be3befa3291adc301bbd3491
+Description:  Kernel module support for nftables
+
+Package: kmod-nft-netdev
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nft-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2495
+Filename: kmod-nft-netdev_4.19.108-1_i386_pentium4.ipk
+Size: 3249
+SHA256sum: 8141136ad14117fc8ec519dc1515055f1b77d888de946b5c95666a8453887cda
+Description:  Netfilter nf_tables netdev support
+
+Package: kmod-nls-base
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 105
+Filename: kmod-nls-base_4.19.108-1_i386_pentium4.ipk
+Size: 846
+SHA256sum: 5c37ff7c723f71aace633b0dc4fa5c676369d3d4f6e9681b27482db13ac2cd27
+Description:  Kernel module for NLS (Native Language Support)
+
+Package: kmod-nls-cp437
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nls-base
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2127
+Filename: kmod-nls-cp437_4.19.108-1_i386_pentium4.ipk
+Size: 2879
+SHA256sum: 79a909dc224742ae5a484194daae27860808b7283ca33f9b96c305dbb57ee0e8
+Description:  Kernel module for NLS Codepage 437 (United States, Canada)
+
+Package: kmod-nls-iso8859-1
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nls-base
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1809
+Filename: kmod-nls-iso8859-1_4.19.108-1_i386_pentium4.ipk
+Size: 2555
+SHA256sum: af4404d7432b057e396919eece8ae49ba7fee5640e62a222dd3f9706158efc86
+Description:  Kernel module for NLS ISO 8859-1 (Latin 1)
+
+Package: kmod-nls-utf8
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nls-base
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1018
+Filename: kmod-nls-utf8_4.19.108-1_i386_pentium4.ipk
+Size: 1779
+SHA256sum: 02875aea07353910530cd0b52b0dd14c85e298e99b5864fa39cbdaa4ef2db627
+Description:  Kernel module for NLS UTF-8
+
+Package: kmod-pcnet32
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mii
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 18619
+Filename: kmod-pcnet32_4.19.108-1_i386_pentium4.ipk
+Size: 19409
+SHA256sum: d7140395033418a9963ba3f3e3cb6084d7deb102c04cefe9c0ec1830a59d42d9
+Description:  Kernel modules for AMD PCnet32 Ethernet adapters
+
+Package: kmod-phy-realtek
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-libphy
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1997
+Filename: kmod-phy-realtek_4.19.108-1_i386_pentium4.ipk
+Size: 2741
+SHA256sum: a80f85a3f52038e31dd4c56021b2f6eb6e8bdb0bd1a2cb42b4948ec79dfe5258
+Description:  Supports the Realtek 821x PHY.
+
+Package: kmod-ppp
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-lib-crc-ccitt, kmod-slhc
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 19613
+Filename: kmod-ppp_4.19.108-1_i386_pentium4.ipk
+Size: 20386
+SHA256sum: 31b2130026fc39f178625f041d1271686ca77804dc050a75064d1c410ffea463
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ppp, kmod-pppox
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 6774
+Filename: kmod-pppoe_4.19.108-1_i386_pentium4.ipk
+Size: 7571
+SHA256sum: ef47ecb84f12f5f4dd11a066563c20b6c396b2e87733c971321a19391e607def
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ppp
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 1496
+Filename: kmod-pppox_4.19.108-1_i386_pentium4.ipk
+Size: 2262
+SHA256sum: 37b3cc03524337995d9cc1b9a190e93f259cc99ff59100f8b1c3f6bf4f4022e2
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-pps
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 4599
+Filename: kmod-pps_4.19.108-1_i386_pentium4.ipk
+Size: 5402
+SHA256sum: da31115b70cba635d277dee80bf2edaee7779da16cc29adeef0a935b3f23538c
+Description:  PPS (Pulse Per Second) is a special pulse provided by some GPS
+ antennae. Userland can use it to get a high-precision time
+ reference.
+
+Package: kmod-ptp
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-pps
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 6941
+Filename: kmod-ptp_4.19.108-1_i386_pentium4.ipk
+Size: 7756
+SHA256sum: 4a67591d52b6d55650e93b5f4f527faa8e892fb18ffd287e5989ac0c21fc300a
+Description:  The IEEE 1588 standard defines a method to precisely
+ synchronize distributed clocks over Ethernet networks.
+
+Package: kmod-r8125
+Version: 4.19.108+9.002.02-x86-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 39200
+Filename: kmod-r8125_4.19.108+9.002.02-x86-1_i386_pentium4.ipk
+Size: 39957
+SHA256sum: e95794ec517bd34cbe18634e552c96dd8b925e25146fe1afdfeead5fe637fb55
+Description:  Driver for Realtek r8125 chipsets
+
+Package: kmod-r8169
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mii, r8169-firmware, kmod-phy-realtek
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 30073
+Filename: kmod-r8169_4.19.108-1_i386_pentium4.ipk
+Size: 30893
+SHA256sum: 59b6e57c36bbf2d6b343bbdda3b2e29c6c8d7bdf221ca1f4c7458c3a05c8b4d6
+Description:  Kernel modules for RealTek RTL-8169 PCI Gigabit Ethernet adapters
+
+Package: kmod-regmap-core
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 105
+Filename: kmod-regmap-core_4.19.108-1_i386_pentium4.ipk
+Size: 834
+SHA256sum: 7da04174c6c6190cd424bce3155e5fc09282fff14af6d183e36e59bdaa019d79
+Description:  Generic register map support
+
+Package: kmod-rt2800-lib
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-rt2x00-lib, kmod-lib-crc-ccitt
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 52555
+Filename: kmod-rt2800-lib_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 53276
+SHA256sum: c2072caa52f38cf15752e770d9617f2db295e79629fdd0a2cf81af6d0e48ef37
+Description:  Ralink Drivers for RT2x00 cards (rt2800 LIB)
+
+Package: kmod-rt2800-usb
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-rt2x00-usb, kmod-rt2800-lib, kmod-lib-crc-ccitt, rt2800-usb-firmware
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 6353
+Filename: kmod-rt2800-usb_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 7199
+SHA256sum: caf404f45ca48f26599241aa2f4f9d30bc9acd60777294e557b50b76274fd0c8
+Description:  Ralink Drivers for RT2x00 cards (RT2870 USB)
+
+Package: kmod-rt2x00-lib
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mac80211
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 20311
+Filename: kmod-rt2x00-lib_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 21089
+SHA256sum: ce9648941e712b03c43726bd799d4a717f8e9d3cab9e9032c12d560a962f1902
+Description:  Ralink Drivers for RT2x00 cards (LIB)
+
+Package: kmod-rt2x00-usb
+Version: 4.19.108+5.4.27-1-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-rt2x00-lib, kmod-usb-core
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 5911
+Filename: kmod-rt2x00-usb_4.19.108+5.4.27-1-1_i386_pentium4.ipk
+Size: 6699
+SHA256sum: 922874f1d0ea16b4e6b40ab660504649cf8a83b18d5a308cf93a03b3dd76d959
+Description:  Ralink Drivers for RT2x00 cards (USB)
+
+Package: kmod-sched-cake
+Version: 4.19.108+2019-03-12-057c7388-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ipt-conntrack
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 15735
+Filename: kmod-sched-cake_4.19.108+2019-03-12-057c7388-1_i386_pentium4.ipk
+Size: 16525
+SHA256sum: 37f30ca8d837710460ba29a45011cf694df8b1de16e524fe486d4998020d6fbf
+Description:  Common Applications Kept Enhanced fq_codel/blue derived shaper
+
+Package: kmod-sched-connmark
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-sched-core, kmod-ipt-core, kmod-ipt-conntrack-extra
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2496
+Filename: kmod-sched-connmark_4.19.108-1_i386_pentium4.ipk
+Size: 3250
+SHA256sum: 1fd894dde744fffd9ec879ab4a7d5f01437bbd1edc98ab9a9f815f7ab6d17006
+Description:  Traffic shaper conntrack mark support
+
+Package: kmod-sched-core
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 48403
+Filename: kmod-sched-core_4.19.108-1_i386_pentium4.ipk
+Size: 49238
+SHA256sum: bdca4e9c435dedaf5cf3a74945d8a223c384b6176eb5476c12cea05e970d3bb6
+Description:  Core kernel scheduler support for IP traffic
+
+Package: kmod-scsi-core
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 238
+Filename: kmod-scsi-core_4.19.108-1_i386_pentium4.ipk
+Size: 958
+SHA256sum: 8736fdd788bc5156a209d9d060a1da4743561d6dfd7dc8a113bd7b27ce8915e8
+Description:  SCSI device support
+
+Package: kmod-sis900
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mii
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 11675
+Filename: kmod-sis900_4.19.108-1_i386_pentium4.ipk
+Size: 12445
+SHA256sum: 653809620e22cd7446c9d186e36be865d3cd540f17659c0284b1a3ffbdbb2e29
+Description:  Kernel modules for Sis 900 Ethernet adapters.
+
+Package: kmod-slhc
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-lib-crc-ccitt
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 3688
+Filename: kmod-slhc_4.19.108-1_i386_pentium4.ipk
+Size: 4454
+SHA256sum: e3d7f2f26a0394da7a65336471fbb93881f482d405810023ac96c5443e5f5bd0
+Description:  Serial Line Header Compression
+
+Package: kmod-sound-core
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-input-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 119137
+Filename: kmod-sound-core_4.19.108-1_i386_pentium4.ipk
+Size: 119931
+SHA256sum: 3d5526d714734d97c1c8a34690d98d8afdb44c1511cb79cfec12e42cab598dcb
+Description:  Kernel modules for sound support
+
+Package: kmod-sound-hda-codec-realtek
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-sound-core, kmod-sound-hda-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 105
+Filename: kmod-sound-hda-codec-realtek_4.19.108-1_i386_pentium4.ipk
+Size: 858
+SHA256sum: 3e33427dfdc1d77894476fb30dae2d8fbbbf0fbac803205421271763a634ee6c
+Description:  Kernel modules for Intel HDA Realtek codec support
+
+Package: kmod-sound-hda-codec-via
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-sound-core, kmod-sound-hda-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 105
+Filename: kmod-sound-hda-codec-via_4.19.108-1_i386_pentium4.ipk
+Size: 861
+SHA256sum: 1f39b3fc0673a2ba3e6a18b4e18e85f0e73c91b4b0eeb9aeca7e48e088872d4f
+Description:  Kernel modules for HD Audio VIA codec support
+
+Package: kmod-sound-hda-core
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-sound-core, kmod-regmap-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 105
+Filename: kmod-sound-hda-core_4.19.108-1_i386_pentium4.ipk
+Size: 853
+SHA256sum: 87336c31a214eeb937dc2793a6216a1df5c5345ecdfcc1f732b71feba23aea75
+Description:  Kernel modules for HD Audio sound support
+
+Package: kmod-sound-mpu401
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 3244
+Filename: kmod-sound-mpu401_4.19.108-1_i386_pentium4.ipk
+Size: 4014
+SHA256sum: d9e745ec31103d1910721e20e71004c8c91139c89e89bdcfe0df7d27ca2cd0e2
+Description:  support for MIDI ports compatible with the Roland MPU-401
+ interface in UART mode.
+
+Package: kmod-sound-via82xx
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-ac97, kmod-sound-mpu401, kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 10679
+Filename: kmod-sound-via82xx_4.19.108-1_i386_pentium4.ipk
+Size: 11499
+SHA256sum: cbfd287f6f9185e15ca3c0e63b4403d295aa7360a230760b7b8544a95d33527a
+Description:  support for the integrated AC97 sound device on motherboards
+ with VIA chipsets.
+
+Package: kmod-tcp-bbr
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 4272
+Filename: kmod-tcp-bbr_4.19.108-1_i386_pentium4.ipk
+Size: 5114
+SHA256sum: 99ac86de47e11c392fb5ed0a2a3004bb6c8c727e1781572fe6fc1af3d99dab56
+Description:  Kernel module for BBR (Bottleneck Bandwidth and RTT) TCP congestion
+ control. It requires the fq ("Fair Queue") pacing packet scheduler.
+ For kernel 4.13+, TCP internal pacing is implemented as fallback.
+
+Package: kmod-tg3
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-libphy, kmod-ptp
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 75979
+Filename: kmod-tg3_4.19.108-1_i386_pentium4.ipk
+Size: 76582
+SHA256sum: 01377d628d38feabe6b5ff59202cec99044ec76c790958754aecca21074db431
+Description:  Kernel modules for Broadcom Tigon3 Gigabit Ethernet adapters
+
+Package: kmod-thermal
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-hwmon-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 190
+Filename: kmod-thermal_4.19.108-1_i386_pentium4.ipk
+Size: 995
+SHA256sum: 26be54f305c239e717bb340336b4e2aaf63eb2cfadd4366e5c41da25e3d3bc5b
+Description:  Generic Thermal Sysfs driver offers a generic mechanism for thermal
+ management. Usually it's made up of one or more thermal zone and cooling
+ device.
+
+Package: kmod-tulip
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mii
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 64810
+Filename: kmod-tulip_4.19.108-1_i386_pentium4.ipk
+Size: 65736
+SHA256sum: 456f8e002d5032a6c12b40fd920529fa757236011e2aef9064821e702b810f2d
+Description:  Kernel modules for the Tulip family of network cards,
+ including DECchip Tulip, DIGITAL EtherWORKS, Winbond W89c840,
+ Davicom DM910x/DM980x and ULi M526x controller support.
+
+Package: kmod-tun
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 18410
+Filename: kmod-tun_4.19.108-1_i386_pentium4.ipk
+Size: 19187
+SHA256sum: 7d8926154eb8a1d34a520b6b114df65919048a900c2e759c3638a5eac821b1bb
+Description:  Kernel support for the TUN/TAP tunneling device
+
+Package: kmod-usb-audio
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-usb-core, kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 75954
+Filename: kmod-usb-audio_4.19.108-1_i386_pentium4.ipk
+Size: 76653
+SHA256sum: 69e797994a022027fc8d88e0707ddb6d37c4b5a2b41d4e5979a64f46d3036c52
+Description:  Kernel support for USB audio devices
+
+Package: kmod-usb-core
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-nls-base
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 238
+Filename: kmod-usb-core_4.19.108-1_i386_pentium4.ipk
+Size: 967
+SHA256sum: 1dad064f6e7815e6a4de8a903238e89d024092083818de582eb78ab8dba8d615
+Description:  Kernel support for USB
+
+Package: kmod-usb-ehci
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-usb-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 234
+Filename: kmod-usb-ehci_4.19.108-1_i386_pentium4.ipk
+Size: 962
+SHA256sum: 48d634e92503079b0f96c575226d7801d24384d9634f10398311c97e8fefb393
+Description:  EHCI controller support
+
+Package: kmod-usb-hid
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-hid, kmod-hid-generic, kmod-input-evdev, kmod-usb-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 186
+Filename: kmod-usb-hid_4.19.108-1_i386_pentium4.ipk
+Size: 963
+SHA256sum: bc75ebdfb76afcc9f7634321ba8f2626913cf81fb81c35ed126c70d8df138b21
+Description:  Kernel support for USB HID devices such as keyboards and mice
+
+Package: kmod-usb-net-asix-ax88179
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-libphy, kmod-usb-net
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 7114
+Filename: kmod-usb-net-asix-ax88179_4.19.108-1_i386_pentium4.ipk
+Size: 7930
+SHA256sum: 9798656dd8c162ba66b5c9fe43b97b3c218fabc7a40604d538067577b468a2e6
+Description:  Kernel module for USB-to-Ethernet ASIX AX88179 based USB 3.0/2.0
+ to Gigabit Ethernet adapters.
+
+Package: kmod-usb-net-asix
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-libphy, kmod-usb-net
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 10713
+Filename: kmod-usb-net-asix_4.19.108-1_i386_pentium4.ipk
+Size: 11471
+SHA256sum: f9cb72b5c09849d203c09bd3aea0d48827eec60ab8cf3f9b3f083a938ec76ef6
+Description:  Kernel module for USB-to-Ethernet Asix convertors
+
+Package: kmod-usb-net-rtl8150
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-usb-net
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 5397
+Filename: kmod-usb-net-rtl8150_4.19.108-1_i386_pentium4.ipk
+Size: 6168
+SHA256sum: a9395171d8adeda34efb1a9fbb850fb01b0a6bcd8501d638ed59aae3c0355011
+Description:  Kernel module for USB-to-Ethernet Realtek 8150 convertors
+
+Package: kmod-usb-net-rtl8152
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-usb-net
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 20998
+Filename: kmod-usb-net-rtl8152_4.19.108-1_i386_pentium4.ipk
+Size: 21803
+SHA256sum: c098b5aeea6295f3aa5876c0ee3f1e5e0ec18dbe2d877eae9d16e41a1ceee87f
+Description:  Kernel module for USB-to-Ethernet Realtek 8152 USB2.0/3.0 convertors
+
+Package: kmod-usb-net
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mii, kmod-usb-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 11981
+Filename: kmod-usb-net_4.19.108-1_i386_pentium4.ipk
+Size: 12741
+SHA256sum: 45a4e223280be15764dd92ee1329bcfdf3e3634750dc0e2f192571018541c00e
+Description:  Kernel modules for USB-to-Ethernet convertors
+
+Package: kmod-usb-ohci-pci
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-usb-ohci, kmod-usb-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 235
+Filename: kmod-usb-ohci-pci_4.19.108-1_i386_pentium4.ipk
+Size: 984
+SHA256sum: e1a9596a18fd7f5b77cacba7e2d9c53eebc3a59553ff93618d0dbbd668115154
+Description:  Kernel support for PCI OHCI controllers
+
+Package: kmod-usb-ohci
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-usb-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 250
+Filename: kmod-usb-ohci_4.19.108-1_i386_pentium4.ipk
+Size: 992
+SHA256sum: c7047829ae2528de25ac649bc12f9fe7a35988ae4a8fbd2e94047b74dd0c6a8f
+Description:  Kernel support for USB OHCI controllers
+
+Package: kmod-usb-storage-extras
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-usb-storage
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 28001
+Filename: kmod-usb-storage-extras_4.19.108-1_i386_pentium4.ipk
+Size: 28812
+SHA256sum: 7301f4ce1f906cc906413794706effa2b5ae1d913a0993d6a94d68a3e67d5f0e
+Description:  Say Y here if you want to have some more drivers,
+ such as for SmartMedia card readers
+
+Package: kmod-usb-storage-uas
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-usb-storage
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 7652
+Filename: kmod-usb-storage-uas_4.19.108-1_i386_pentium4.ipk
+Size: 8499
+SHA256sum: b980eb55877499a2ce879ba9909dbde19a9f9b8fa596816b8ba15ce6c6360b96
+Description:  Say Y here if you want to include support for
+ USB Attached SCSI (UAS/UASP), a higher
+ performance protocol available on many
+ newer USB 3.0 storage devices
+
+Package: kmod-usb-storage
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-scsi-core, kmod-usb-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 233
+Filename: kmod-usb-storage_4.19.108-1_i386_pentium4.ipk
+Size: 983
+SHA256sum: 291c08fabf49e6dfd06dc00dbf0c717ac6bcc7941df698b4b11d2340a6f06aa6
+Description:  Kernel support for USB Mass Storage devices
+
+Package: kmod-usb2-pci
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-usb2, kmod-usb-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 234
+Filename: kmod-usb2-pci_4.19.108-1_i386_pentium4.ipk
+Size: 988
+SHA256sum: fb3db33bb0562beb290d6353405e205162dc31bb91858c7668e867cf23204a9d
+Description:  Kernel support for PCI USB2 (EHCI) controllers
+
+Package: kmod-usb2
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-usb-ehci, kmod-usb-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 2829
+Filename: kmod-usb2_4.19.108-1_i386_pentium4.ipk
+Size: 3594
+SHA256sum: 95f6c673f14a8eff07cc726436146095544875ea9f64753cbb1d39d2d510b619
+Description:  Kernel support for USB2 (EHCI) controllers
+
+Package: kmod-usb3
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-usb-core
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 3314
+Filename: kmod-usb3_4.19.108-1_i386_pentium4.ipk
+Size: 4060
+SHA256sum: f4ac606e01f5fc6e75cea9f650be8453bfb11360671060c0bd9c034c9244c182
+Description:  Kernel support for USB3 (XHCI) controllers
+
+Package: kmod-via-rhine
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-mii
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 12577
+Filename: kmod-via-rhine_4.19.108-1_i386_pentium4.ipk
+Size: 13329
+SHA256sum: 5a3bf1b740693f9b03f990b7eff4a563fe93b34010c879be1c71542e356214fa
+Description:  Kernel modules for Via Rhine Ethernet chipsets
+
+Package: kmod-via-velocity
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66), kmod-lib-crc-ccitt
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 15136
+Filename: kmod-via-velocity_4.19.108-1_i386_pentium4.ipk
+Size: 15909
+SHA256sum: 55bc9878988bd1e1051cbcf2f3f9882a42f250d679bbc91138a8576667ba34a0
+Description:  Kernel modules for VIA Velocity Gigabit Ethernet chipsets
+
+Package: kmod-vmxnet3
+Version: 4.19.108-1
+Depends: kernel (=4.19.108-1-0e218bd03b7975518e7f0ecf33aa0c66)
+License: GPL-2.0
+Section: kernel
+Architecture: i386_pentium4
+Installed-Size: 24566
+Filename: kmod-vmxnet3_4.19.108-1_i386_pentium4.ipk
+Size: 25307
+SHA256sum: 9b8f8f361f63761e4099ac5aecea4f62e9e7c9a3d7cbd65f1f1abeb2bf18a4f3
+Description:  Kernel modules for VMware VMXNET3 ethernet adapters.
+
+Package: libatomic
+Version: 7.5.0-1
+Depends: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: i386_pentium4
+Installed-Size: 6461
+Filename: libatomic_7.5.0-1_i386_pentium4.ipk
+Size: 7237
+SHA256sum: 9f210a7980bd0760b9b43208f342ea2fa1dc2dd33ade85d71a7c7970eb7e4df0
+Description:  Atomic support library
+
+Package: libgcc
+Version: 7.5.0-1
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: i386_pentium4
+Installed-Size: 34386
+Filename: libgcc_7.5.0-1_i386_pentium4.ipk
+Size: 35209
+SHA256sum: 688a433943a2d616e5ccc816c7297d3c7a0f9439e36775cc4a21102c3fea3243
+Description:  GCC support library
+
+Package: libip4tc2
+Version: 1.8.4-1
+Depends: libc, libxtables12
+Provides: libip4tc
+License: GPL-2.0
+Section: libs
+Architecture: i386_pentium4
+Installed-Size: 19467
+Filename: libip4tc2_1.8.4-1_i386_pentium4.ipk
+Size: 20171
+SHA256sum: a190cfaae906182c5bd298a9169cddc94b1823d99bdb5de3bfd5fd7386e3485b
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc2
+Version: 1.8.4-1
+Depends: libc, libxtables12
+Provides: libip6tc
+License: GPL-2.0
+Section: libs
+Architecture: i386_pentium4
+Installed-Size: 19381
+Filename: libip6tc2_1.8.4-1_i386_pentium4.ipk
+Size: 20105
+SHA256sum: 02d2d225f3f7591cd5954cedfde6efc1e389fd7f588ecf198a0b7aab7876d57a
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 2020-03-22-9f5a7c4f-1
+Depends: libc, libiwinfo20200105, liblua5.1.5
+License: GPL-2.0
+Section: lang
+Architecture: i386_pentium4
+Installed-Size: 6640
+Filename: libiwinfo-lua_2020-03-22-9f5a7c4f-1_i386_pentium4.ipk
+Size: 7472
+SHA256sum: 57090c3aa24c6c6f4c06d1c022a06fe3f2e1c5ac8a14d02337136044754b656c
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo20200105
+Version: 2020-03-22-9f5a7c4f-1
+Depends: libc, libnl-tiny, libuci, libubus20191227
+Provides: libiwinfo
+License: GPL-2.0
+Section: libs
+Architecture: i386_pentium4
+Installed-Size: 27199
+Filename: libiwinfo20200105_2020-03-22-9f5a7c4f-1_i386_pentium4.ipk
+Size: 28058
+SHA256sum: f946c802b78d0ca45b64d61a767d376bda8fcb642be81ee7876704fbcf3037ea
+Description:  Wireless information library with consistent interface for proprietary Broadcom,
+ nl80211 and wext driver interfaces.
+
+Package: libpthread
+Version: 1.1.24-1
+Depends: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: i386_pentium4
+Installed-Size: 126
+Filename: libpthread_1.1.24-1_i386_pentium4.ipk
+Size: 885
+SHA256sum: 413824432279cebc2924d36055ce57556e36e5df4bc02876e5dae648209a9e0e
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.1.24-1
+Depends: libpthread
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: i386_pentium4
+Installed-Size: 126
+Filename: librt_1.1.24-1_i386_pentium4.ipk
+Size: 896
+SHA256sum: c2aaab72080279270acc9c79c33eddee8488f3d9de686f6d967acfc7f00e1f1c
+Description:  POSIX.1b RealTime extension library
+
+Package: libstdcpp
+Version: 7.5.0-1
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: i386_pentium4
+Installed-Size: 377061
+Filename: libstdcpp_7.5.0-1_i386_pentium4.ipk
+Size: 376740
+SHA256sum: 59f11d939248dafa4f29ba0b797878bc94875719ed80ac0b79691e9e6bfb33a9
+Description:  GNU Standard C++ Library v3
+
+Package: libxtables12
+Version: 1.8.4-1
+Depends: libc
+Provides: libxtables
+License: GPL-2.0
+Section: libs
+Architecture: i386_pentium4
+Installed-Size: 44655
+Filename: libxtables12_1.8.4-1_i386_pentium4.ipk
+Size: 45379
+SHA256sum: 36a3c2bc499050e1fe497a87f3cb3c37f7fab6c69bbcd972b1f9c02895f62706
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 23
+Depends: libc, libubox20170601
+License: GPL-2.0+
+Section: utils
+Architecture: i386_pentium4
+Installed-Size: 10539
+Filename: mtd_23_i386_pentium4.ipk
+Size: 11315
+SHA256sum: d72ad8bdb5569a26e101cc50f2b45a51b089d205c0f96731bbc3b362e70eedea
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
